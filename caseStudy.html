@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Case Study</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="imageHover">
+            <img class="ponyo" src="images/Traponyo.png">
+
+            <p class="sypnosis">During a forbidden excursion to see the surface world, a goldfish princess encounters a human boy named Sosuke, 
+                who gives her the name Ponyo. Ponyo longs to become human, and as her friendship with Sosuke grows, 
+                she becomes more humanlike. Ponyo's father brings her back to their ocean kingdom, 
+                but so strong is Ponyo's wish to live on the surface that she breaks free, and in the process, 
+                spills a collection of magical elixirs that endanger Sosuke's village.</p>
+        </div>
+
+        <img class="secBg" src="images/BgPon.jpg">
+        
+        <div class="nav-bar">
+            <a href="#movieList">Movie List</a>
+            <a href="#aboutUs">About Studio Ghibli</a>
+            <a id="show-login">Log In</a>
+        </div>
+
+        <div class="LoginPop">
+            <div class="close-btn">&times;</div>
+
+            <div class="form">
+                <h2>Log In</h2>
+                <div class="form-element">
+                    <label for="email">Email: </label>
+                    <input placeholder="username@email.com" type="text" id="email">
+                </div>
+
+                <div class="form-element">
+                    <label for="password">Password:</label>
+                    <input placeholder="password" type="password" id="password">
+                </div>
+
+                <div class="form-element">
+                    <span onclick="showPass()" id="viewPass" title="Show password">&#128065;</span>
+
+                </div>
+
+                <div class="form-element">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember Me</label>
+                </div>
+            </div>
+
+            <div class="form-element">
+                <button type="submit">Sign In</button>
+            </div>
+
+            <div class="form-element">
+                <a href="#">Forgot password?</a>
+            </div>
+        </div>
+
+        <div class="bodyText">
+            <p>2008</p>
+            <h1>Ponyo</h1>
+        </div>
+
+        <div class="videoBtn">
+            <span class="btn" onclick="watchVid()" id="viewVid">&#9654; WATCH TRAILER</span>
+        </div>
+
+        <div class="videos" id="trailerVid">
+            <video controls id="ponyoTrailer">
+                <source src="videos/ponyo-trailer.mp4" type="video/mp4">
+                Browser does not support mp4.
+                <button>button</button>
+            </video>
+        </div>
+
+        <div class="movieList" id="movieList">
+            <h1>Other Movies</h1>
+            <div class="carousel snaps-inline">
+                <img src="images/movieList/1984_nausicaaValley.jpg">
+                <img src="images/movieList/1986_castleSky.jpg">
+                <img src="images/movieList/1988_neighborTotoro.jpg">
+                <img src="images/movieList/1989_deliveryService.jpg">
+                <img src="images/movieList/1991_onlyYesterday.jpg">
+                <img src="images/movieList/1992_porcoRosso.jpg">
+                <img src="images/movieList/1994_pomPoko.jpg">
+                <img src="images/movieList/1995_whisperHeart.jpg">
+                <img src="images/movieList/1997_princessMononoke.jpg">
+                <img src="images/movieList/1999_neighborYamada.jpg">
+                <img src="images/movieList/2001_spiritedAway.jpg">
+                <img src="images/movieList/2002_catReturn.jpg">
+                <img src="images/movieList/2004_movingCastle.jpg">
+                <img src="images/movieList/2006_talesEarthsea.jpg">
+                <img src="images/movieList/2010_arriety.jpg">
+                <img src="images/movieList/2011_poppyHill.jpg">
+                <img src="images/movieList/2013_princessKaguya.jpg">
+                <img src="images/movieList/2014_marnie.jpg">
+                <img src="images/movieList/2016_redTurtle.jpg">
+            </div>
+        </div>
+
+        <div class="aboutUs" id="aboutUs">
+            <div class="aboutUs-content">
+                <h1>About Studio Ghibli</h1>
+                <p>Studio Ghibli was founded in 1985 by animated film directors Isao Takahata and Hayao Miyazaki,
+                and has produced twenty-two feature-length films. Most Studio Ghibli films ranked number one
+                at the box office in Japan in the year in which they were released. SPIRITED AWAY,
+                directed by Hayao Miyazaki and released in 2001, is the all-time highest grossing film in Japan, 
+                earning over 30 billion yen at the box office.</p>
+                <p>Studio Ghibli films have garnered numerous awards and critical acclaim from film critics and 
+                animation specialists around the world. 
+                SPIRITED AWAY was awarded the Golden Bear as the Best Feature Film at the 2002 Berlin 
+                International Film Festival and won the 2002 Academy Award for Best Animated Feature Film. 
+                In October 2001, Studio Ghibli, in conjunction with The Tokuma Memorial Cultural Foundation 
+                for Animation, founded the Ghibli Museum, Mitaka, designed by Hayao Miyazaki.</p>
+            </div>
+
+            <div class="logo">
+                <img src="images/logo.jpg" class="sgLogo">
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
