@@ -20,7 +20,7 @@ body::before {
     width: 100%;
     height: 100%;
     filter: blur(10px);
-    background-image: url("images/BgPon.jpg");
+    background-image: url("images/background/BgPon.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
@@ -55,7 +55,7 @@ body::before {
     }
 }
 
-.sypnosis{
+.synopsis{
     position: absolute;
     background: linear-gradient(110deg, rgba(0, 0, 0, 0) 24.5%, rgba(102, 91, 91, 0.3) 0%);
     display: flex;
@@ -79,6 +79,7 @@ body::before {
 
 .secBg{
     height: 30em;
+    width: 56em;
     opacity: .5;
     position: relative;
 }
@@ -213,22 +214,24 @@ body::before {
 
 .bodyText{
     position: absolute;
-    translate: 5em -19em;
+    translate: 5em -22em;
     color: white;
     height: 10em;
-
-    &.bodyText > h1{
-        font-size: 100px;
-        translate: 0em -1.6em;
+    width: 20em;
+    
+    &.bodyText > .title{
+        translate: 0em -1em;
+        font-size: 6em;
     }
+
     &.bodyText > p{
-        translate: 0.15em -5em;
+        translate: 0.15em -1.5em;
     }
 }
 
 .videoBtn{
     position: absolute;
-    translate: 5.4em -10em;
+    translate: 5.4em -8em;
 
     &.videoBtn .btn{
         font-size: 13px;
@@ -270,6 +273,7 @@ body::before {
     display: grid;
     align-items: flex-end;
     scrollbar-color: green;
+    cursor: pointer;
 
     &::before {
         content: ' ';
