@@ -167,14 +167,14 @@ imageList.forEach(function (element) {
                 
             case 'arriety':
                 title.style.fontSize = '3.3em'; 
-                transparent.style.width = '';
-                transparent.style.translate = '';
+                transparent.style.width = '31em';
+                transparent.style.translate = '1em';
                 document.documentElement.scrollTop= 0;
                 break; 
                 
             case 'poppyHill':
                 title.style.fontSize = '3.5em'; 
-                transparent.style.width = '';
+                transparent.style.width = '30em';
                 transparent.style.translate = '';
                 document.documentElement.scrollTop= 0;
                 break; 
@@ -202,12 +202,16 @@ imageList.forEach(function (element) {
                 
             case 'redTurtle':
                 title.style.fontSize = '4em'; 
-                transparent.style.width = '';
-                transparent.style.translate = '';
+                transparent.style.width = '40em';
+                transparent.style.translate = '-6em';
                 document.documentElement.scrollTop= 0;
                 break; 
                 
             default:
+                title.style.fontSize = ''; 
+                transparent.style.width = '';
+                transparent.style.translate = '';
+                document.documentElement.scrollTop = 0;
                 break;
         }
     });
@@ -341,7 +345,7 @@ switch (imgID){
             trailer: 'videos/movingcastle-trailer.mp4',
             year: '2004',
             title: "Howl's Moving Castle",
-            transImg : 'images/transparent/',
+            transImg : 'images/transparent/howls.png',
             bgImg : 'images/background/bg_movingcastle.jpg'
         };
 
@@ -351,7 +355,7 @@ switch (imgID){
             trailer: 'videos/earthsea-trailer.mp4',
             year: '2006',
             title: 'Tales from Earthsea',
-            transImg : 'images/transparent/',
+            transImg : 'images/transparent/earthsea.png',
             bgImg : 'images/background/bg_earthsea.jpg'
         };
 
@@ -361,7 +365,7 @@ switch (imgID){
             trailer: 'videos/arriety-trailer.mp4',
             year: '2010',
             title: 'Secret World of Arriety',
-            transImg : 'images/transparent/',
+            transImg : 'images/transparent/arriety.png',
             bgImg : 'images/background/bg_arriety.jpg'
         };
 
@@ -371,7 +375,7 @@ switch (imgID){
             trailer: 'videos/poppyhill-trailer.mp4',
             year: '2011',
             title: 'From Up on Poppy Hill',
-            transImg : 'images/transparent/',
+            transImg : 'images/transparent/poppy.png',
             bgImg : 'images/background/bg_poppyhill.jpg'
         };
 
@@ -381,7 +385,7 @@ switch (imgID){
             trailer: 'videos/kaguya-trailer.mp4',
             year: '2013',
             title: 'The Tale of Princess Kaguya',
-            transImg : 'images/transparent/',
+            transImg : 'images/transparent/kaguya.png',
             bgImg : 'images/background/bg_kaguya.jpg'
         };
 
@@ -391,7 +395,7 @@ switch (imgID){
             trailer: 'videos/windrises-trailer.mp4',
             year: '2013',
             title: 'The Wind Rises',
-            transImg : 'images/transparent/',
+            transImg : 'images/transparent/wind.png',
             bgImg : 'images/background/bg_windrises.jpg'
         };
 
@@ -401,7 +405,7 @@ switch (imgID){
             trailer: 'videos/marnie-trailer.mp4',
             year: '2014',
             title: 'When Marnie Was There',
-            transImg : 'images/transparent/',
+            transImg : 'images/transparent/marnie.png',
             bgImg : 'images/background/bg_marnie.jpg'
         };
 
@@ -411,11 +415,18 @@ switch (imgID){
             trailer: 'videos/redturtle-trailer.mp4',
             year: '2016',
             title: 'The Red Turtle',
-            transImg : 'images/transparent/',
+            transImg : 'images/transparent/turtle.png',
             bgImg : 'images/background/bg_redturtle.jpg'
         };
 
         default:
-            return null;
+            return{
+            synopsis: "During a forbidden excursion to see the surface world, a goldfish princess encounters a human boy named Sosuke, who gives her the name Ponyo. Ponyo longs to become human, and as her friendship with Sosuke grows, she becomes more humanlike. Ponyo's father brings her back to their ocean kingdom, but so strong is Ponyo's wish to live on the surface that she breaks free, and in the process, spills a collection of magical elixirs that endanger Sosuke's village.",
+            trailer: 'videos/ponyo-trailer.mp4',
+            year: '2008',
+            title: 'Ponyo',
+            transImg : 'images/transparent/Traponyo.png',
+            bgImg : 'images/background/bgPon.jpg'
+            };
     }
 }
