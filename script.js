@@ -426,7 +426,7 @@ switch (imgID){
             year: '2008',
             title: 'Ponyo',
             transImg : 'images/transparent/Traponyo.png',
-            bgImg : 'images/background/bgPon.jpg'
+            bgImg : 'images/background/BgPon.jpg'
             };
     }
 }
