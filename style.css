@@ -3,7 +3,8 @@
 }
 
 html {
-    height: 100%;
+    max-height: 100vh;
+    max-width: 100vw;
     scroll-behavior: smooth;
 }
 
@@ -147,7 +148,7 @@ body::before {
     cursor: pointer;
 
     &:hover{
-        background-color: blac5;
+        background-color: black;
     }
 }
 .form > h2{
@@ -370,3 +371,23 @@ body::before {
     border-top-left-radius: 3em;
     border-bottom-left-radius: 3em;
 }
+
+footer{
+    color: rgb(221, 207, 181);
+    background-color: rgb(31, 44, 31);
+    display: flex;
+    justify-content: center;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em ;
+}
+
+th{
+    padding-top: 1em;
+}
+
+th, td{
+    padding-left: 2em;
+}
+
+
+
