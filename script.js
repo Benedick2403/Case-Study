@@ -21,7 +21,6 @@ function showPass(){
         showBtn.title = "Show password"
     }
 }
-
 function watchVid(){
     var trailer = document.getElementById("trailerVid");
     var ponyoTrailer = document.getElementById("ponyoTrailer");

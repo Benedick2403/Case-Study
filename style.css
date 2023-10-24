@@ -274,7 +274,6 @@ body::before {
     display: grid;
     align-items: flex-end;
     scrollbar-color: green;
-    cursor: pointer;
 
     &::before {
         content: ' ';
@@ -313,6 +312,7 @@ body::before {
     object-fit: cover;
     display: grid;
     grid-template-rows: min-content;
+    cursor: pointer;
 
 }
 
