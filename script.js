@@ -34,7 +34,6 @@ function watchVid(){
 
 document.addEventListener("keydown", function (board) {
     if (board.keyCode == 27) {
-        // Set the trailer's opacity to 0
         var trailer = document.getElementById("trailerVid");
         trailer.style.opacity = 0;
         trailer.style.zIndex = -1;
